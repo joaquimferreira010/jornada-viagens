@@ -5,6 +5,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding: 38px 48px;
+  position: relative;
 }
 
 .logo {
@@ -13,10 +14,33 @@ header {
   height: 64px;
 }
 
-.navegation-menu{
-    margin-top: 24px;
+.navegation-menu {
+  margin-top: 24px;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
   display: none;
+}
+
+.list-links {
+  list-style: none;
+  font-family: ;
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
