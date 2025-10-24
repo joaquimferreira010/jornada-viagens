@@ -14,6 +14,14 @@ header {
   height: 64px;
 }
 
+.img-mobile {
+  display: block;
+}
+
+.img-desktop {
+  display: none;
+}
+
 .navegation-menu {
   margin-top: 24px;
 }
@@ -69,5 +77,34 @@ nav {
 
   .navegation-menu li {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+  }
+
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .navegation-menu a:hover {
+    color: var(--button-primary-color);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 160px;
   }
 }
