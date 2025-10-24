@@ -99,7 +99,7 @@ nav {
   }
 
   .navegation-menu a:hover {
-    color: var(--button-primary-color);
+    color: var(--primary-color);
   }
 }
 
