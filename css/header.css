@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
@@ -21,8 +21,7 @@ header {
 .img-desktop {
   display: none;
 }
-
-.navegation-menu {
+.navigation-menu {
   margin-top: 24px;
 }
 
@@ -46,65 +45,60 @@ nav {
 .list-links li {
   margin: 16px 0;
 }
-
 .list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
   font-size: 24px;
 }
+.list-links li a.active {
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 768px) {
-  .navegation-menu {
+  .navigation-menu {
     margin-top: 0;
     width: 467px;
   }
-
-  .navegation-menu label {
+  .navigation-menu label {
     display: none;
   }
 
-  .navegation-menu nav {
+  .navigation-menu nav {
     display: block;
   }
-
-  .navegation-menu ul {
+  .navigation-menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
-
-  .navegation-menu li {
+  .navigation-menu li {
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header {
+  .main-header {
     padding: 38px 120px;
   }
-
   .logo {
     width: 260px;
     height: 64px;
   }
-
   .img-desktop {
     display: block;
   }
-
   .img-mobile {
     display: none;
   }
-
-  .navegation-menu a:hover {
+  .navigation-menu a:hover {
     color: var(--primary-color);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  header {
+  .main-header {
     padding: 38px 160px;
   }
 }
