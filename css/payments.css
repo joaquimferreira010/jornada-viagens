@@ -7,10 +7,6 @@
   width: 100%;
 }
 
-.payments .content-container {
-  display: flex;
-}
-
 .payments .content-container .image-gallery .image.first {
   background: url(../img/gallery1-mobile.png) no-repeat;
   background-size: cover;
@@ -51,15 +47,20 @@
   }
 }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 1440px) {
+  .payments .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .payments .content-container {
     justify-content: space-between;
   }
   .payments .content-container .content-text {
-    width: 390px;
+    width: 360px;
   }
 
   .payments .content-container .image-gallery {
     width: 790px;
+    margin-top: 0;
   }
 }
