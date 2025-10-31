@@ -52,13 +52,13 @@
 }
 
 @media screen and (min-width: 440px) {
-  .payments .content-container{
+  .payments .content-container {
     justify-content: space-between;
   }
-   .payments .content-container .content-text {
+  .payments .content-container .content-text {
     width: 390px;
   }
-}
+
   .payments .content-container .image-gallery {
     width: 790px;
   }
